@@ -8,7 +8,7 @@
 
 ## Description
 
-This repository contains a complete setup for a **wall‑follower** robot simulation using **CoppeliaSim** and a Python‑based controller.  The project includes a ready‑made scene with a Pioneer P3DX mobile robot, a configurable PID controller implemented in Python, and auxiliary scripts to connect to the simulator using the [ZeroMQ Remote API](https://manual.coppeliarobotics.com/en/zmqRemoteApi/zmqRemoteApi.htm).  The goal of this project is to provide a clear, educational example of how to build and tune a wall‑following algorithm while keeping the code organised and easy to extend.
+This repository contains a complete setup for a **wall‑follower** robot simulation using **CoppeliaSim** and a Python‑based controller.  The project includes a ready‑made scene with a Pioneer P3DX mobile robot, a configurable PID controller implemented in Python, and auxiliary scripts to connect to the simulator using a Remote API.  The goal of this project is to provide a clear, educational example of how to build and tune a wall‑following-PID algorithm.
 
 ## Dependencies
 
@@ -16,13 +16,13 @@ This project relies on several Python packages and system libraries to communica
 
 - **CBOR** – Used to serialise and deserialise messages between Python and CoppeliaSim.  Install it via apt or pip:
   ```bash
-  sudo apt install python3-cbor      # Debian/Ubuntu package
+  sudo apt install python3-cbor      
   # or, using pip
   python3 -m pip install cbor
   ```
 - **ZeroMQ (pyzmq)** – Provides asynchronous messaging and sockets for the Remote API:
   ```bash
-  sudo apt install python3-zmq       # Debian/Ubuntu package
+  sudo apt install python3-zmq       
   # or, using pip
   python3 -m pip install pyzmq
   ```
@@ -62,8 +62,8 @@ sudo apt-get update && sudo apt-get install -y \
 
 ## Documentation
 
-- **CoppeliaSim** – Official site: <https://www.coppeliarobotics.com/>  •  Manual: <https://manual.coppeliarobotics.com/index.html>
-- **Robot Documentation** – Adept’s Pioneer 3‑DX: <https://www.cyberbotics.com/doc/guide/pioneer-3dx> (Webots user guide)
+- **CoppeliaSim** – Site: <https://www.coppeliarobotics.com/>  •  Manual: <https://manual.coppeliarobotics.com/index.html>
+- **Robot Documentation** – <https://www.cyberbotics.com/doc/guide/pioneer-3dx?version=R2021a>
 - **Reference Projects** – The implementation in this repository is inspired by and adapted from:
   - <https://github.com/jdlope/robotica/tree/master>
   - <https://github.com/mijay6/Wall-Following-Practica-Robotica>
@@ -74,7 +74,8 @@ We plan to publish a detailed video tutorial for this project.  A link will be a
 
 ## Author
 
-**Dobra Mihai**  
+Dobra Mihai
+
 Politehnica University of Timișoara  
 Faculty of Automation and Computer Science  
 Robotics Elements  
@@ -82,4 +83,4 @@ Academic Year 2025–2026
 
 ## Contributing
 
-Contributions are welcome!  Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
