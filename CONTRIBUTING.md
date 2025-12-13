@@ -8,7 +8,7 @@ Thank you for considering contributing to this project! This document provides g
 
 If you find any issues or have suggestions for improvements:
 
-1. Check if the issue already exists in the [Issues](https://github.com/mijay6/Implementarea-unui-Microsistem-cu-Microprocesorul-8086/issues) section
+1. Check if the issue already exists in the [Issues](https://github.com/mijay6/CoppeliaSim-Wall-Follower/issues) section
 2. If not, create a new issue with a clear title and detailed description
 3. Include relevant information such as:
    - Steps to reproduce the issue
