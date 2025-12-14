@@ -75,7 +75,7 @@ sudo apt-get update && sudo apt-get install -y \
 
 ## Video Tutorial
 
-- <https://youtu.be/WFJHBVnnXt8>
+- <https://youtu.be/omwx7rlgoLs>
 
 ## Author
 
