@@ -52,11 +52,16 @@ sudo apt-get update && sudo apt-get install -y \
    ```
    This step must be repeated each time you open a new terminal so that Python can find the Remote API client.
 
-2. **Open the simulation** – Launch **CoppeliaSim** and open the scene file located in `scenes/wallFollower.ttt`.  The scene contains the Pioneer P3DX robot, the floor and walls for wall‑following, and a small child script that draws the robot’s trajectory for visualisation.
-
-3. **Run the controller** – From the root of the repository, execute the Python control script:
+   Verify if the CoppeliaSim API client library (ZeroMQ) is installed correctly.
    ```bash
-   python3 zmqRemoteAPI/wall_follower_pid.py
+   python3 -c "from coppeliasim_zmqremoteapi_client import RemoteAPIClient; print('OK')"
+   ```
+
+3. **Open the simulation** – Launch **CoppeliaSim** and open the scene file located in `scenes/wallFollower.ttt`.  The scene contains the Pioneer P3DX robot, the floor and walls for wall‑following, and a small child script that draws the robot’s trajectory for visualisation.
+
+4. **Run the controller** – From the root of the repository, execute the Python control script:
+   ```bash
+   python3 wall_follower_pid.py
    ```
    The script connects to the running simulator, starts the simulation, reads the sonar sensors and sends wheel commands to perform wall following using a configurable PID controller.  Tune the gains in `Config` within `wall_follower_pid.py` to change the behaviour of the robot.
 
@@ -70,7 +75,7 @@ sudo apt-get update && sudo apt-get install -y \
 
 ## Video Tutorial
 
-We plan to publish a detailed video tutorial for this project.  A link will be added here once it becomes available.
+- <https://youtu.be/WFJHBVnnXt8>
 
 ## Author
 
